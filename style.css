@@ -1,0 +1,184 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #2e3b4e, #1c2733);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styling */
+#container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 450px;
+    width: 100%;
+}
+
+/* Main Title Styling */
+.main-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Duration Section Styling */
+.duration {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.length-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#break-label, #session-label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styling */
+button {
+    background: rgba(255, 255, 255, 0.1);
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Break and Session Length Styling */
+.length-control > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#break-length, #session-length {
+    font-size: 30px;
+    margin: 10px 0;
+    display: inline-block;
+    width: 40px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Timer Wrapper Styling */
+.timerwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Timer Styling */
+.timer {
+    border: 7px solid #1c2733;
+    margin: 20px auto 10px auto;
+    width: 270px;
+    height: 160px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(28, 39, 51, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#timer-label {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#time-left {
+    font-family: 'Digital', monospace;
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Time Controller Styling */
+.time-controller {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.time-controller button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.time-controller button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Font Awesome Icons Styling */
+.fas {
+    font-size: 24px;
+}
+
+/* Hidden Audio Element */
+#beep {
+    display: none;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 500px) {
+    #container {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+    }
+
+    .duration {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

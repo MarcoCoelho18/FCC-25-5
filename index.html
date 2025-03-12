@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25+5 Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="container">
+        <div class="main-title">
+            <h1>25 + 5 Clock</h1>
+        </div>
+        <div class="duration">
+            <!-- Break Length Section -->
+            <div class="length-control">
+                <div id="break-label">Break Length</div>
+                <div>
+                    <button id="break-decrement" class="btn-level">
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                    <div id="break-length">5</div> 
+                    <button id="break-increment" class="btn-level">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Session Length Section -->
+            <div class="length-control">
+                <div id="session-label">Session Length</div>
+                <div>
+                    <button id="session-decrement" class="btn-level">
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                    <div id="session-length">25</div>
+                    <button id="session-increment" class="btn-level">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Timer Section -->
+        <div class="timerwrapper">
+            <div class="timer">
+                <div id="timer-label">Session</div>
+                <div id="time-left">25:00</div>
+            </div>
+        </div>
+        <!-- Time Controller Section -->
+        <div class="time-controller">
+            <button id="start_stop" class="btn-level">
+                <i class="fas fa-play"></i>
+                <i class="fas fa-pause"></i>
+            </button>
+            <button id="reset" class="btn-level">
+                <i class="fas fa-sync"></i>
+            </button>
+        </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <audio src='beep-sound.mp3'id='beep'></audio>
+    <script src="script.js"></script>
+</body>
+</html>
